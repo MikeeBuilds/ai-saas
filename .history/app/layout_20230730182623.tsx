@@ -1,4 +1,4 @@
-
+"use client-only"
 
 import './globals.css'
 import type { Metadata } from 'next'

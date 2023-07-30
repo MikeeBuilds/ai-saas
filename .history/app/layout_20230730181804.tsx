@@ -1,10 +1,8 @@
-
-
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/clerk-react'
-import ClerkProivderClient from '@/ClerkProviderClient.client'
+import SomeClientComponent from 
 
 const inter = Inter({ subsets: ['latin'] })
 

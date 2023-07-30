@@ -4,7 +4,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/clerk-react'
-import ClerkProivderClient from '@/ClerkProviderClient.client'
+import SomeClientComponent from '@/SomeClientComponent.client'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,10 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider frontendApi=''>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
+    <ClerkProvider frontendApi='YOUR_CLERK_FRONTEND_API'>
+      <div className={inter.className}>{children}</div>
     </ClerkProvider>
   )
 }
